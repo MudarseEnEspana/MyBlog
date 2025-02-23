@@ -1,24 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Moving to Spain Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
-        <p>Sharing my journey of moving to Spain!</p>
+        <div class="menu-container">
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <nav id="menu" class="menu">
+                <ul>
+                    <li><a href="category-bureaucracy.html">Bureaucracy</a></li>
+                    <li><a href="category-lifestyle.html">Lifestyle</a></li>
+                    <li><a href="category-general.html">General Information</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="it">Italian</option>
+                </select>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>First Blog Post</h2>
-        <p>This is my first post about moving to Spain. Stay tuned for more tips!</p>
-    </section>
+    <main>
+        <section class="intro">
+            <h1>Moving to Spain</h1>
+            <p>Follow my journey and learn everything about moving to Spain: from bureaucracy to lifestyle and everything in between!</p>
+        </section>
+
+        <section class="latest-posts">
+            <h2>Latest Blog Posts</h2>
+            <div class="post-grid">
+                <div class="post-card">
+                    <img src="image1.jpg" alt="Bureaucracy">
+                    <h3>How to Navigate Bureaucracy in Spain</h3>
+                    <a href="post-bureaucracy.html">Read more</a>
+                </div>
+                <div class="post-card">
+                    <img src="image2.jpg" alt="Lifestyle">
+                    <h3>My First Month in Spain</h3>
+                    <a href="post-lifestyle.html">Read more</a>
+                </div>
+                <div class="post-card">
+                    <img src="image3.jpg" alt="General Information">
+                    <h3>General Tips for Expats Moving to Spain</h3>
+                    <a href="post-general.html">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated with Our Newsletter</h2>
+            <form action="newsletter-signup.php" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 My Blog</p>
+        <p>Legal Notice | Privacy Policy | Terms & Conditions</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
